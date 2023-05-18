@@ -1,9 +1,0 @@
-name: validate-apex-code
-on: [push]
-jobs:
-  check-apex:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check APEX
-        uses: legetz/setup-pmd@v6.48
-      - run: pmd -language apex --dir . --rulesets ./pmd-rules.xml -f text
