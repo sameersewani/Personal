@@ -26,4 +26,4 @@ jobs:
           rm pmd-bin-6.39.0.zip
 
       - name: Run PMD for Apex
-        run: pmd-bin-6.39.0/bin/run.sh pmd -d force-app/main/default/classes -R rulesets/apex/quickstart.xml -f text 
+        run: pmd-bin-6.39.0/bin/run.sh pmd -d force-app/main/default/classes -R rulesets/apex/quickstart.xml -f text > ~/D/pmd_output.txt 
